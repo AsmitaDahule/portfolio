@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmita - Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle, rgba(18, 18, 62, 0.9) 0%, rgba(0, 0, 33, 1) 100%);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .left {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px;
+            height: calc(100vh - 80px);
+        }
+
+        .leftSection {
+            max-width: 50%;
+            font-size: 2.8rem;
+            line-height: 1.4;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .leftSection .highlight {
+            color: #00d4ff;
+            text-shadow: 0 0 15px #00d4ff, 0 0 30px #00d4ff;
+        }
+
+        .rightSection img {
+            width: 80%;
+            max-width: 500px;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-shadow: 0 0 10px #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Asmi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi, My Name is <span class="highlight">Asmita</span>.<br>
+                I am a passionate <span class="highlight">Web Developer</span>.
+            </div>
+            <div class="rightSection">
+                <img src="img4.png" alt="Profile Picture">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Asmita. Built with 💙 | <a href="#contact">Contact Me</a>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
